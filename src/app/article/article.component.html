@@ -1,9 +1,135 @@
-form [formGroup]="loginForm" (ngSubmit)="onLogin()">
-    <h2>ADMIN PAGE</h2>
-    <h4>Login as a Admin user</h4>
+
+<div class="container">
+
+    <h3 class="title">Article</h3>
+
+    <button [disabled]="false" class="btn-article" type="submit">Article</button>
+    <button [disabled]="false" class="btn-post" type="submit"> Post </button>
     
-    <input
-      type="email"
-      placeholder="Email"
-      formControlName="Email"
-    />
+
+    <div *ngIf="success" class="success"> Article Added Successfully </div>
+
+
+
+    <form [formGroup]="ArticleForm" (ngSubmit)="onSubmit()">
+
+    <label for="Title">Title:</label>
+    <input class="name" formControlName="Title" type="text" placeholder="Name" />
+   
+    <span
+      *ngIf="
+      ArticleForm.controls['Title'].hasError('required') &&
+      ArticleForm.controls['Title'].touched
+      "
+      class="error">Title is required</span>
+
+
+
+    <label for="Tags">Tags:</label>
+    <input class="tags" formControlName="Tags" type="text" />
+
+    <span
+      *ngIf="
+      ArticleForm.controls['Tags'].hasError('required') &&
+      ArticleForm.controls['Tags'].touched
+      "
+      class="error">Tags is required</span>
+
+    
+    
+    <input class="body" type="text" placeholder="body" />
+    <span
+      *ngIf="
+      ArticleForm.controls['Body'].hasError('required') &&
+      ArticleForm.controls['Body'].touched
+      "
+      class="error">Body is required</span>
+
+
+    <br>
+    <input class="reference" type="text" placeholder="Reference" />
+    <span
+      *ngIf="
+      ArticleForm.controls['Reference'].hasError('required') &&
+      ArticleForm.controls['Reference'].touched
+      "
+      class="error">Reference is required</span>
+
+
+    <br>
+    
+    <input class="related-article" type="text" placeholder="Related-Article" />
+    
+    <span
+      *ngIf="
+      ArticleForm.controls['RelatedArticle'].hasError('required') &&
+      ArticleForm.controls['RelatedArticle'].touched
+      "
+      class="error">Related-Article is required</span>
+
+
+
+      <input class="createdon" type="text" placeholder="Created on" />
+    
+      <span
+        *ngIf="
+        ArticleForm.controls['Createdon'].hasError('required') &&
+        ArticleForm.controls['Createdon'].touched
+        "
+        class="error"> Created on is required</span>
+  
+  
+  
+        <input class="createdby" type="text" placeholder="CreatedBy" />
+    
+        <span
+          *ngIf="
+          ArticleForm.controls['CreatedBy'].hasError('required') &&
+          ArticleForm.controls['CreatedBy'].touched
+          "
+          class="error"> Created By is required</span>
+    
+    
+  
+
+          <input class="LastModifiedBy" type="text" placeholder="LastModifiedBy" />
+    
+          <span
+            *ngIf="
+            ArticleForm.controls['LastModifiedBy'].hasError('required') &&
+            ArticleForm.controls['LastModifiedBy'].touched
+            "
+            class="error"> Last Modified By is required</span>
+      
+
+            <input class="LastModifiedOn" type="text" placeholder="LastModifiedOn" />
+    
+            <span
+              *ngIf="
+              ArticleForm.controls['LastModifiedOn'].hasError('required') &&
+              ArticleForm.controls['LastModifiedOn'].touched
+              "
+              class="error"> LastModified On is required</span>
+        
+      
+
+
+
+
+
+
+    <div class="AddButton">
+        <button [disabled]="false" class="addbtn" type="submit">
+            Add Article
+        </button>
+        <button class="btn" type="reset">
+            Clear Fields
+        </button>
+    </div>
+  </form>
+
+</div>
+    
+    
+
+

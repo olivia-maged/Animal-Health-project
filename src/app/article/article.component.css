@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.container{
+    padding: 30px 210px 30px 210px;
+    
+}
+
+.title{
+    padding: 30px 10px 30px 20px;
+    background-color: #e0e0d6;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.container .success{
+    color: rgb(37, 123, 37);
+    font-size: 20px;
+    margin-top: 20px;
+}
+.container button{
+    padding-bottom: 1.4rem;
+    padding-bottom: 1.4rem;
+    border: none;
+    border-radius: 10px;
+    width: 120px;
+    height: 7px;
+    margin-left: 10px;
+    margin-top: 36px;
+    font-size: 16px;
+    padding-top: 11px;
+    color: white;
+ }
+.container .btn-article{
+    margin-left: 20rem; 
+    background-color: #868686;
+}
+.container .btn-post{
+    background-color: #5699E8;
+}
+.container  .name {
+margin-top: 50px;
+
+}
+.container  .name{
+    padding: 8px 98px 12px 20px;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+.container  .tags{
+    padding: 8px 98px 12px 20px;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+.container .body {
+    padding: 8px 300px 300px 20px;
+    margin-right: 40px;
+    margin-top: 43px;
+}
+.container .reference{
+    padding: 8px 300px 100px 20px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+.container  .related-article{
+    padding: 8px 300px 100px 20px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+.container  .createdon{
+    padding: 8px 300px 100px 20px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+.container  .createdby{
+    padding: 8px 300px 100px 20px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+.container  .LastModifiedBy{
+    padding: 8px 300px 100px 20px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+.container  .LastModifiedOn{
+    padding: 8px 300px 100px 20px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+.container .AddButton .addbtn{
+    margin-left: 20rem; 
+    background-color: #dedede;
+    color: black;
+}
+.container .AddButton .btn{
+    background-color: #c2c0c0;
+    color: black;
+
+}
+
+.error {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+  }

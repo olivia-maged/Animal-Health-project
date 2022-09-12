@@ -12,6 +12,7 @@ import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   declarations: [
+
     AppComponent,
     LoginComponent,
     ArticleComponent
@@ -22,7 +23,7 @@ import { ArticleComponent } from './article/article.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule
-  ],
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
